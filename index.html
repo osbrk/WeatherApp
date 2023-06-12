@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Cabin&family=Public+Sans:wght@200;400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+ 
   </head>
   <body>
     <video id="background-video" autoplay loop muted>
@@ -41,7 +43,7 @@
             <img src="images/sun.png" alt="Sunny" id="currentImage" />
           </div>
           <div class="col-3 text-center lh-base" id="current">
-            Clear<br />
+            <span id="current-desc">Clear</span><br />
             <span id="current-degrees">22</span>
             <span id="celsius"><a href="#">ºC</a></span> |
             <span id="farenheit"><a href="#">ºF</a></span>
@@ -49,7 +51,7 @@
         </div>
 
         <div class="row mt-3 mb-4 p-3">
-          <div class="col-9">
+          <div class="col-6">
             <form>
               <input
                 type="text"
@@ -63,6 +65,9 @@
           </div>
           <div class="col-3">
             <button type="submit" class="btn btn-dark" id="search">Search</button>
+          </div></form>
+          <div class="col-3">
+            <button class="btn btn-primary" id="btn-current">Current</button>
           </div></form>
         </div>
         <div class="row p-1" id="weekdays">
@@ -104,6 +109,8 @@
         </div>
       </div>
     </div>
+    <div class="col-m-12 mt-1 ms-4"><a href="https://github.com/osbrk/WeatherApp" target="_blank" class="opensource">Open-source code</a> <b>by Olga Sukhorebruk.</b></div>
+    
     <script type="text/javascript" src="src/index.js"></script>
   </body>
 </html>
