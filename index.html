@@ -19,7 +19,6 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
- 
   </head>
   <body>
     <video id="background-video" autoplay loop muted>
@@ -28,7 +27,7 @@
     <div class="container">
       <div
         class="container-sm border border-secondary rounded-5 bg-light p-2 bg-opacity-75"
-        style="max-width: 700px;"
+        style="max-width: 700px"
       >
         <div class="row">
           <div class="col-sm-12 mt-4 ms-4" id="current-day">
@@ -61,14 +60,17 @@
                 autofocus="on"
                 autocomplete="off"
               />
-            
+            </form>
+          </div>
+
+          <div class="col-3">
+            <button type="submit" class="btn btn-dark" id="search">
+              Search
+            </button>
           </div>
           <div class="col-3">
-            <button type="submit" class="btn btn-dark" id="search">Search</button>
-          </div></form>
-          <div class="col-3">
             <button class="btn btn-primary" id="btn-current">Current</button>
-          </div></form>
+          </div>
         </div>
         <div class="row p-1" id="weekdays">
           <div class="col-2">Mon</div>
@@ -100,17 +102,37 @@
         </div>
 
         <div class="row mb-4 p-1">
-          <div class="col-2"><span id="day1">25</span>º<span id="day-degrees1">C</span></div>
-          <div class="col-2"><span id="day2">28</span>º<span id="day-degrees2">C</span></div>
-          <div class="col-2"><span id="day3">28</span>º<span id="day-degrees3">C</span></div>
-          <div class="col-2"><span id="day4">27</span>º<span id="day-degrees4">C</span></div>
-          <div class="col-2"><span id="day5">28</span>º<span id="day-degrees5">C</span></div>
-          <div class="col-2"><span id="day6">29</span>º<span id="day-degrees6">C</span></div>
+          <div class="col-2">
+            <span id="day1">25</span>º<span id="day-degrees1">C</span>
+          </div>
+          <div class="col-2">
+            <span id="day2">28</span>º<span id="day-degrees2">C</span>
+          </div>
+          <div class="col-2">
+            <span id="day3">28</span>º<span id="day-degrees3">C</span>
+          </div>
+          <div class="col-2">
+            <span id="day4">27</span>º<span id="day-degrees4">C</span>
+          </div>
+          <div class="col-2">
+            <span id="day5">28</span>º<span id="day-degrees5">C</span>
+          </div>
+          <div class="col-2">
+            <span id="day6">29</span>º<span id="day-degrees6">C</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-m-12 mt-1 ms-4" class="footer"><a href="https://github.com/osbrk/WeatherApp" target="_blank" class="opensource">Open-source code</a> <b>by Olga Sukhorebruk.</b></div>
-    
+    <div class="col-m-12 mt-1 ms-4 text-center">
+      <a
+        href="https://github.com/osbrk/WeatherApp"
+        target="_blank"
+        class="opensource"
+        >Open-source code</a
+      >
+      <b>by Olga Sukhorebruk.</b>
+    </div>
+
     <script type="text/javascript" src="src/index.js"></script>
   </body>
 </html>
