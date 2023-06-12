@@ -6,6 +6,9 @@ body {
   font-weight: 200;
   color: #222831;
 }
+a.opensource {
+  color: #d3e0df;
+}
 img {
   width: 75px;
 }
